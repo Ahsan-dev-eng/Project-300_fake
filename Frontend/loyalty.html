@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Program - Cup Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                                 <h2 class="logo-text">☕ Cup Story</h2>
+            </a>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <input type="text" placeholder="Search menu items..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+                <button id="menu-close-button" class="fas fa-times"></button>
+            </div>
+        </nav>
+    </header> 
+    
+    <main>
+        <section class="loyalty-section">
+            <div class="section-content">
+                <div class="loyalty-header">
+                    <h1 class="page-title">☕ Cup Story Rewards</h1>
+                    <p class="page-subtitle">Earn points, unlock rewards, and enjoy exclusive member benefits</p>
+                </div>
+                
+                <div class="loyalty-hero">
+                    <div class="loyalty-info">
+                        <h2>Join Our Loyalty Program</h2>
+                        <p>Start earning points with every purchase and unlock amazing rewards. From free drinks to exclusive events, being a member has never been more rewarding.</p>
+                        <div class="loyalty-stats">
+                            <div class="stat">
+                                <h3>10,000+</h3>
+                                <p>Active Members</p>
+                            </div>
+                            <div class="stat">
+                                <h3>500,000+</h3>
+                                <p>Points Redeemed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>$50,000+</h3>
+                                <p>Rewards Given</p>
+                            </div>
+                        </div>
+                        <button class="join-loyalty-btn">Join Now - It's Free!</button>
+                    </div>
+                    <div class="loyalty-image">
+                        <img src="coffee again.jpeg" alt="Loyalty Rewards">
+                    </div>
+                </div>
+                
+                <div class="how-it-works">
+                    <h2>How It Works</h2>
+                    <div class="steps-grid">
+                        <div class="step">
+                            <div class="step-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h3>1. Join</h3>
+                            <p>Sign up for free and get your digital membership card</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3>2. Earn</h3>
+                            <p>Get 1 point for every $1 spent on coffee and food</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>3. Redeem</h3>
+                            <p>Use points for free drinks, discounts, and exclusive rewards</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rewards-tiers">
+                    <h2>Rewards Tiers</h2>
+                    <div class="tiers-grid">
+                        <div class="tier-card bronze">
+                            <div class="tier-header">
+                                <i class="fas fa-medal"></i>
+                                <h3>Bronze</h3>
+                                <p>0 - 999 points</p>
+                            </div>
+                            <ul class="tier-benefits">
+                                <li><i class="fas fa-check"></i> 1 point per $1 spent</li>
+                                <li><i class="fas fa-check"></i> Birthday reward</li>
+                                <li><i class="fas fa-check"></i> Monthly newsletter</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tier-card silver">
+                            <div class="tier-header">
+                                <i class="fas fa-medal"></i>
+                                <h3>Silver</h3>
+                                <p>1,000 - 4,999 points</p>
+                            </div>
+                            <ul class="tier-benefits">
+                                <li><i class="fas fa-check"></i> 1.2 points per $1 spent</li>
+                                <li><i class="fas fa-check"></i> Free drink on birthday</li>
+                                <li><i class="fas fa-check"></i> Priority reservations</li>
+                                <li><i class="fas fa-check"></i> Exclusive member events</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tier-card gold">
+                            <div class="tier-header">
+                                <i class="fas fa-medal"></i>
+                                <h3>Gold</h3>
+                                <p>5,000 - 9,999 points</p>
+                            </div>
+                            <ul class="tier-benefits">
+                                <li><i class="fas fa-check"></i> 1.5 points per $1 spent</li>
+                                <li><i class="fas fa-check"></i> Free drink + pastry on birthday</li>
+                                <li><i class="fas fa-check"></i> VIP seating</li>
+                                <li><i class="fas fa-check"></i> Early access to new menu items</li>
+                                <li><i class="fas fa-check"></i> Complimentary coffee tasting</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tier-card platinum">
+                            <div class="tier-header">
+                                <i class="fas fa-crown"></i>
+                                <h3>Platinum</h3>
+                                <p>10,000+ points</p>
+                            </div>
+                            <ul class="tier-benefits">
+                                <li><i class="fas fa-check"></i> 2 points per $1 spent</li>
+                                <li><i class="fas fa-check"></i> Free meal on birthday</li>
+                                <li><i class="fas fa-check"></i> Private coffee cupping sessions</li>
+                                <li><i class="fas fa-check"></i> Invitation to exclusive events</li>
+                                <li><i class="fas fa-check"></i> Personal barista consultation</li>
+                                <li><i class="fas fa-check"></i> 20% off merchandise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rewards-catalog">
+                    <h2>Rewards Catalog</h2>
+                    <div class="rewards-grid">
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee cup3.jpeg" alt="Free Coffee">
+                                <div class="points-required">100 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>Free Coffee</h3>
+                                <p>Redeem for any coffee drink up to $5</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee again.jpeg" alt="Free Pastry">
+                                <div class="points-required">150 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>Free Pastry</h3>
+                                <p>Choose from our selection of fresh pastries</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee-cup.webp" alt="50% Off">
+                                <div class="points-required">200 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>50% Off Any Item</h3>
+                                <p>Get half off any menu item of your choice</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee cup3.jpeg" alt="Free Workshop">
+                                <div class="points-required">500 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>Free Workshop</h3>
+                                <p>Join any coffee workshop or tasting event</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee again.jpeg" alt="VIP Experience">
+                                <div class="points-required">1000 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>VIP Coffee Experience</h3>
+                                <p>Private coffee cupping with our head barista</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                        
+                        <div class="reward-item">
+                            <div class="reward-image">
+                                <img src="coffee-cup.webp" alt="Free Merchandise">
+                                <div class="points-required">1500 pts</div>
+                            </div>
+                            <div class="reward-content">
+                                <h3>Free Merchandise</h3>
+                                <p>Choose any item from our merchandise collection</p>
+                                <button class="redeem-btn">Redeem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="member-benefits">
+                    <h2>Exclusive Member Benefits</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Early Access</h3>
+                            <p>Be the first to try new seasonal drinks and menu items</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <h3>Extended Hours</h3>
+                            <p>Access to exclusive member-only hours and events</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-truck"></i>
+                            <h3>Free Delivery</h3>
+                            <p>Free delivery on orders over $25 for Gold+ members</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Member Events</h3>
+                            <p>Exclusive access to coffee tastings and workshops</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="loyalty-signup">
+                    <div class="signup-content">
+                        <h2>Ready to Start Earning?</h2>
+                        <p>Join thousands of coffee lovers who are already earning rewards with every visit.</p>
+                        <form class="loyalty-signup-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <button type="submit" class="signup-submit-btn">Join Cup Story Rewards</button>
+                        </form>
+                        <p class="signup-note">By joining, you agree to our terms and conditions. No purchase necessary to earn points.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

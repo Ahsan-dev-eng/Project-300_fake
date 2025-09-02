@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Calendar - Cup Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                                 <h2 class="logo-text">☕ Cup Story</h2>
+            </a>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <input type="text" placeholder="Search menu items..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+                <button id="menu-close-button" class="fas fa-times"></button>
+            </div>
+        </nav>
+    </header> 
+    
+    <main>
+        <section class="events-section">
+            <div class="section-content">
+                <div class="events-header">
+                    <h1 class="page-title">Events & Happenings</h1>
+                    <p class="page-subtitle">Join us for coffee tastings, workshops, and community events</p>
+                </div>
+                
+                <div class="events-filter">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="tasting">Coffee Tastings</button>
+                    <button class="filter-btn" data-filter="workshop">Workshops</button>
+                    <button class="filter-btn" data-filter="live">Live Music</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+                
+                <div class="events-grid filterable-grid">
+                    <div class="event-card" data-category="tasting">
+                        <div class="event-image">
+                            <img src="coffee again.jpeg" alt="Coffee Tasting Event">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Premium</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Premium Coffee Tasting</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 4:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Main Tasting Room</p>
+                            <p class="event-description">Experience our finest single-origin coffees with our expert baristas. Learn about different brewing methods and coffee origins.</p>
+                            <div class="event-details">
+                                <span class="event-price">$25</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> 12 spots left</span>
+                            </div>
+                            <button class="book-event-btn">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-category="workshop">
+                        <div class="event-image">
+                            <img src="coffee cup3.jpeg" alt="Latte Art Workshop">
+                            <div class="event-date">
+                                <span class="day">18</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Beginner</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Latte Art Workshop</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Barista Station</p>
+                            <p class="event-description">Learn the basics of latte art from our professional baristas. Create beautiful designs in your coffee!</p>
+                            <div class="event-details">
+                                <span class="event-price">$35</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> 8 spots left</span>
+                            </div>
+                            <button class="book-event-btn">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-category="live">
+                        <div class="event-image">
+                            <img src="coffee-cup.webp" alt="Jazz Night">
+                            <div class="event-date">
+                                <span class="day">20</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Free</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Jazz Night with Coffee</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 7:00 PM - 9:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Main Lounge</p>
+                            <p class="event-description">Enjoy live jazz music while sipping your favorite coffee. A perfect evening for music and coffee lovers.</p>
+                            <div class="event-details">
+                                <span class="event-price">Free</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> No limit</span>
+                            </div>
+                            <button class="book-event-btn">Join Event</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-category="community">
+                        <div class="event-image">
+                            <img src="coffee again.jpeg" alt="Coffee & Conversation">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Community</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Coffee & Conversation</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 3:00 PM - 5:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Community Corner</p>
+                            <p class="event-description">Join fellow coffee enthusiasts for meaningful conversations about coffee culture, sustainability, and community.</p>
+                            <div class="event-details">
+                                <span class="event-price">$5</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> 20 spots left</span>
+                            </div>
+                            <button class="book-event-btn">Join Event</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-category="workshop">
+                        <div class="event-image">
+                            <img src="coffee cup3.jpeg" alt="Brewing Masterclass">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Advanced</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Brewing Masterclass</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 1:00 PM - 4:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Brewing Lab</p>
+                            <p class="event-description">Advanced brewing techniques including pour-over, French press, and cold brew methods. Perfect for coffee connoisseurs.</p>
+                            <div class="event-details">
+                                <span class="event-price">$45</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> 6 spots left</span>
+                            </div>
+                            <button class="book-event-btn">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-category="tasting">
+                        <div class="event-image">
+                            <img src="coffee-cup.webp" alt="Seasonal Tasting">
+                            <div class="event-date">
+                                <span class="day">28</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-badge">Seasonal</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Holiday Coffee Tasting</h3>
+                            <p class="event-time"><i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Festive Lounge</p>
+                            <p class="event-description">Celebrate the holidays with our special seasonal coffee blends and festive treats. Perfect for the holiday spirit!</p>
+                            <div class="event-details">
+                                <span class="event-price">$30</span>
+                                <span class="event-capacity"><i class="fas fa-users"></i> 15 spots left</span>
+                            </div>
+                            <button class="book-event-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="calendar-section">
+    <div class="section-content">
+        <h2 class="section-title">Our Events Calendar</h2>
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button class="calendar-nav" id="prevMonth" aria-label="Previous Month"><i class="fas fa-chevron-left"></i></button>
+                <h3 id="currentMonth">August 2025</h3>
+                <button class="calendar-nav" id="nextMonth" aria-label="Next Month"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="calendar-weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days" id="calendarGrid">
+                </div>
+            <div class="calendar-legend">
+                <div class="legend-item">
+                    <span class="legend-dot"></span> Event Scheduled
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+                <section class="highlights-section">
+    <div class="section-content">
+        <h2 class="section-title">Our Specialities</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Weekly Workshops</h3>
+                <p>Join us every week for hands-on coffee brewing and latte art experiences.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Gift Vouchers</h3>
+                <p>Give the perfect gift of a wonderful coffee experience to your loved ones.</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Private Events</h3>
+                <p>Host your special occasions, meetings, or gatherings with us for a unique event.</p>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

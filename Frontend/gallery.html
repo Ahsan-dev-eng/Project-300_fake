@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - ☕ Cup Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">☕ Cup Story</h2>
+            </a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+            <button id="menu-close-button" class="fas fa-times"></button>
+        </nav>
+    </header> 
+    
+    <main>
+        <section class="gallery-section">
+            <div class="section-content">
+                <div class="gallery-header">
+                    <h1 class="page-title">Coffee Gallery</h1>
+                    <p class="page-subtitle">Take a visual journey through our coffee experience</p>
+                </div>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="coffee">Coffee</button>
+                    <button class="filter-btn" data-filter="atmosphere">Atmosphere</button>
+                    <button class="filter-btn" data-filter="beans">Beans</button>
+                </div>
+                
+                <div class="gallery-grid filterable-grid">
+                    <div class="gallery-item" data-filter="coffee">
+                        <img src="https://images.pexels.com/photos/4927148/pexels-photo-4927148.jpeg?_gl=1*lgvy57*_ga*Mjg0NjYzNDM1LjE3NTY2MjA5NzQ.*_ga_8JE65Q40S6*czE3NTY2MjA5NzMkbzEkZzEkdDE3NTY2MjA5OTUkajM4JGwwJGgw" alt="Atmosphere" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Perfect Coffee Cup</h3>
+                            <p>Every cup tells a story</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="beans">
+                        <img src="https://images.pexels.com/photos/4109744/pexels-photo-4109744.jpeg?_gl=1*rjel8z*_ga*Mjg0NjYzNDM1LjE3NTY2MjA5NzQ.*_ga_8JE65Q40S6*czE3NTY2MjY5MjYkbzIkZzEkdDE3NTY2MjY5MzckajQ5JGwwJGgw" alt="Fresh Coffee Beans" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Fresh Coffee Beans</h3>
+                            <p>Premium quality selection</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="coffee">
+                        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Artistic Latte" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Artistic Latte</h3>
+                            <p>Coffee as art</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="atmosphere">
+                        <img src="coffee cup3.jpeg" alt="Cozy Corner" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Cozy Corner</h3>
+                            <p>Your perfect spot</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="coffee">
+                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso Shot" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Espresso Shot</h3>
+                            <p>Pure coffee essence</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="atmosphere">
+                        <img src="coffee-cup.webp" alt="Morning Light" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Morning Light</h3>
+                            <p>Start your day right</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="beans">
+                        <img src="coffee cup3.jpeg" alt="Roasting Process" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Roasting Process</h3>
+                            <p>Art of coffee making</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-filter="coffee">
+                        <img src="coffee again.jpeg" alt="Cappuccino Art" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Cappuccino Art</h3>
+                            <p>Beautiful foam designs</p>
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-stats">
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Photo Moments</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Online Gallery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

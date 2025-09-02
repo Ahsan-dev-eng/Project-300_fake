@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Cup Story - Premium Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">☕ Cup Story</h2>
+            </a>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <input type="text" placeholder="Search menu items..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Sign In</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+                <button id="menu-close-button" class="fas fa-times"></button>
+            </div>
+        </nav>
+    </header> 
+    
+    <main>
+        <!-- Hero Section with Video Background -->
+        <section class="hero-section">
+            <div class="hero-video-container">
+                <video autoplay muted loop class="hero-video">
+                    <source src="https://www.pexels.com/download/video/4081316/" type="video/mp4">
+                    <!-- Fallback image if video doesn't load -->
+                    <img src="coffee cup3.jpeg" alt="Coffee background" class="hero-fallback">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Welcome to Cup Story</h2>
+                    <h3 class="subtitle">Where every cup tells a story of passion & perfection</h3>
+                    <p class="description">Experience the finest coffee beans, expertly roasted and brewed to create moments of pure joy. From classic espresso to innovative specialty drinks.</p>
+                    <div class="buttons">
+                        <a href="menu.html" class="button order-now">Order Now</a>
+                        <a href="reservation.html" class="button book-table">Book a Table</a>
+                        <a href="about.html" class="button contact-us">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Open 7AM-9PM</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-wifi"></i>
+                        <span>Free WiFi</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-parking"></i>
+                        <span>Free Parking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Order Section -->
+        <section class="quick-order-section">
+            <div class="section-content">
+                <h2>Quick Order</h2>
+                <div class="quick-order-grid">
+                    <div class="quick-order-item">
+                        <img src="coffee cup3.jpeg" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p class="price">$3.50</p>
+                        <button class="quick-add-btn" data-item="Espresso" data-price="3.50">Add to Cart</button>
+                    </div>
+                    <div class="quick-order-item">
+                        <img src="coffee again.jpeg" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p class="price">$4.25</p>
+                        <button class="quick-add-btn" data-item="Cappuccino" data-price="4.25">Add to Cart</button>
+                    </div>
+                    <div class="quick-order-item">
+                        <img src="coffee-cup.webp" alt="Latte">
+                        <h3>Latte</h3>
+                        <p class="price">$4.75</p>
+                        <button class="quick-add-btn" data-item="Latte" data-price="4.75">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="offers-section">
+            <div class="section-content">
+                <h2>Special Offers</h2>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-badge">20% OFF</div>
+                        <img src="coffee again.jpeg" alt="Happy Hour">
+                        <div class="offer-content">
+                            <h3>Happy Hour</h3>
+                            <p>2PM - 5PM Daily</p>
+                            <span class="offer-details">All coffee drinks 20% off</span>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">BUY 2 GET 1</div>
+                        <img src="coffee cup3.jpeg" alt="Bundle Deal">
+                        <div class="offer-content">
+                            <h3>Bundle Deal</h3>
+                            <p>Valid until Dec 31</p>
+                            <span class="offer-details">Buy any 2 drinks, get 1 free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section class="reviews-section">
+            <div class="section-content">
+                <h2>What Our Customers Say</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The best coffee I've ever had! The atmosphere is perfect for working and the staff is incredibly friendly."</p>
+                                                 <div class="review-author">
+                             <img src="https://via.placeholder.com/40x40" alt="Shanta">
+                             <div>
+                                 <h4>Shanta</h4>
+                                 <span>Regular Customer</span>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Amazing coffee quality and the seasonal drinks are always a treat. Highly recommend!"</p>
+                                                 <div class="review-author">
+                             <img src="https://via.placeholder.com/40x40" alt="Israt">
+                             <div>
+                                 <h4>Israt</h4>
+                                 <span>Coffee Enthusiast</span>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect spot for meetings. Great coffee, excellent service, and beautiful ambiance."</p>
+                                                 <div class="review-author">
+                             <img src="https://via.placeholder.com/40x40" alt="Opsory">
+                             <div>
+                                 <h4>Opsory</h4>
+                                 <span>Business Owner</span>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter-section">
+            <div class="section-content">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for exclusive offers, coffee tips, and event updates!</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                        <label class="newsletter-checkbox">
+                            <input type="checkbox" required>
+                            <span>I agree to receive marketing emails</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Chat Widget -->
+        <div class="chat-widget" id="chatWidget">
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-header">
+                    <h3>Live Chat</h3>
+                    <button class="chat-close" id="chatClose">×</button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-message bot">
+                        <p>Hi! How can we help you today? ☕</p>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message..." id="chatInput">
+                    <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" id="cartClose">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-content">
+            <div class="footer-content">
+                <div class="footer-section">
+                                         <h3>☕ Cup Story</h3>
+                     <p>Creating perfect coffee experiences since 2018</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="loyalty.html">Loyalty Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                                         <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Sylhet</p>
+                     <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                     <p><i class="fas fa-envelope"></i> hello@cupstory.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday: 7:00 AM - 9:00 PM</p>
+                    <p>Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                                 <p>&copy; 2025 Cup Story. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

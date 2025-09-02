@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Coffee Tips - Cup Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                                 <h2 class="logo-text">☕ Cup Story</h2>
+            </a>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <input type="text" placeholder="Search menu items..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link login-btn">Login</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+                <button id="menu-close-button" class="fas fa-times"></button>
+            </div>
+        </nav>
+    </header> 
+    
+    <main>
+        <section class="blog-section">
+            <div class="section-content">
+                <div class="blog-header">
+                    <h1 class="page-title">Coffee Blog & Tips</h1>
+                    <p class="page-subtitle">Discover coffee secrets, brewing tips, and industry insights</p>
+                </div>
+                
+                <div class="blog-categories">
+                    <button class="category-btn active" data-category="all">All Posts</button>
+                    <button class="category-btn" data-category="tips">Brewing Tips</button>
+                    <button class="category-btn" data-category="news">Coffee News</button>
+                    <button class="category-btn" data-category="culture">Coffee Culture</button>
+                    <button class="category-btn" data-category="recipes">Recipes</button>
+                </div>
+                
+                <div class="blog-grid filterable-grid">
+                    <article class="blog-card featured" data-category="tips">
+                        <div class="blog-image">
+                            <img src="coffee again.jpeg" alt="Perfect Coffee Brewing">
+                            <div class="blog-badge">Featured</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Brewing Tips</span>
+                                <span class="blog-date">Dec 15, 2024</span>
+                            </div>
+                            <h2>The Ultimate Guide to Perfect Coffee </h2>
+                            <p>Master the art of Cup Story with our comprehensive guide. From water temperature to grind size, discover the secrets to brewing the perfect cup every time.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Barista John">
+                                    <span>By Barista John</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="culture">
+                        <div class="blog-image">
+                            <img src="coffee cup3.jpeg" alt="Coffee Around the World">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Coffee Culture</span>
+                                <span class="blog-date">Dec 12, 2024</span>
+                            </div>
+                            <h2>Coffee Traditions Around the World</h2>
+                            <p>Explore fascinating coffee traditions from Ethiopia to Italy. Discover how different cultures celebrate and enjoy their daily cup of coffee.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Coffee Explorer">
+                                    <span>By Coffee Explorer</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="news">
+                        <div class="blog-image">
+                            <img src="coffee-cup.webp" alt="Sustainable Coffee">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Coffee News</span>
+                                <span class="blog-date">Dec 10, 2024</span>
+                            </div>
+                            <h2>Sustainable Coffee: The Future of Coffee Industry</h2>
+                            <p>Learn about sustainable coffee practices and how the industry is evolving to protect our environment while maintaining quality.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Eco Coffee">
+                                    <span>By Eco Coffee</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="recipes">
+                        <div class="blog-image">
+                            <img src="coffee again.jpeg" alt="Coffee Recipes">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Recipes</span>
+                                <span class="blog-date">Dec 8, 2024</span>
+                            </div>
+                            <h2>5 Delicious Coffee Cocktail Recipes</h2>
+                            <p>Elevate your coffee experience with these creative cocktail recipes. Perfect for entertaining or enjoying a special evening treat.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Mixologist">
+                                    <span>By Mixologist</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="tips">
+                        <div class="blog-image">
+                            <img src="coffee cup3.jpeg" alt="Coffee Storage">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Brewing Tips</span>
+                                <span class="blog-date">Dec 5, 2024</span>
+                            </div>
+                            <h2>How to Store Coffee Beans for Maximum Freshness</h2>
+                            <p>Proper coffee storage is crucial for maintaining flavor and aroma. Learn the best practices for keeping your coffee beans fresh longer.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Storage Expert">
+                                    <span>By Storage Expert</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="culture">
+                        <div class="blog-image">
+                            <img src="coffee-cup.webp" alt="Coffee History">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Coffee Culture</span>
+                                <span class="blog-date">Dec 3, 2024</span>
+                            </div>
+                            <h2>The History of Coffee: From Ethiopia to Your Cup</h2>
+                            <p>Journey through the fascinating history of coffee, from its discovery in Ethiopia to becoming the world's most popular beverage.</p>
+                            <div class="blog-footer">
+                                <div class="blog-author">
+                                    <img src="https://via.placeholder.com/30x30" alt="Historian">
+                                    <span>By Historian</span>
+                                </div>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Popular Posts</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <img src="coffee again.jpeg" alt="Popular Post">
+                                <div class="popular-post-content">
+                                    <h4>Best Coffee Beans for Espresso</h4>
+                                    <span class="post-date">Dec 1, 2024</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="coffee cup3.jpeg" alt="Popular Post">
+                                <div class="popular-post-content">
+                                    <h4>Cold Brew vs Iced Coffee</h4>
+                                    <span class="post-date">Nov 28, 2024</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="coffee-cup.webp" alt="Popular Post">
+                                <div class="popular-post-content">
+                                    <h4>Coffee and Health Benefits</h4>
+                                    <span class="post-date">Nov 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Newsletter</h3>
+                        <p>Get the latest coffee tips and news delivered to your inbox!</p>
+                        <form class="sidebar-newsletter">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Tags</h3>
+                        <div class="blog-tags">
+                            <a href="#" class="tag">Brewing</a>
+                            <a href="#" class="tag">Espresso</a>
+                            <a href="#" class="tag">Latte Art</a>
+                            <a href="#" class="tag">Coffee Beans</a>
+                            <a href="#" class="tag">Sustainability</a>
+                            <a href="#" class="tag">Recipes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
