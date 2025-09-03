@@ -90,10 +90,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const contactForm = document.querySelector("#contactForm");
     if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
+        contactForm.addEventListener("submit", async (e) => {
             e.preventDefault();
-            alert("Thank you for your message!");
-            contactForm.reset();
+            const formData = {
+                name: contactForm.name.value,
+                email: contactForm.email.value,
+                phone: contactForm.phone.value,
+                subject: contactForm.subject.value,
+                message: contactForm.message.value,
+                newsletter: contactForm.newsletter.checked
+            };
+            try {
+                const res = await fetch('http://localhost:3001/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                const data = await res.json();
+                if (data.success) {
+                    alert("Thank you for contacting us! Your message has been received.");
+                    contactForm.reset();
+                } else {
+                    alert(data.message || "Failed to send message.");
+                }
+            } catch (err) {
+                alert("Error connecting to server.");
+            }
         });
     }
     const reservationForm = document.querySelector("#reservationForm");

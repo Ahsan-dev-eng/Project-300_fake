@@ -34,6 +34,18 @@ const cartSchema = new mongoose.Schema({
 }, { collection: 'cart' });
 const Cart = mongoose.model('Cart', cartSchema);
 
+// Contact schema and model (contacts collection)
+const contactSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    phone: String,
+    subject: String,
+    message: String,
+    newsletter: Boolean,
+    date: { type: Date, default: Date.now }
+}, { collection: 'contacts' });
+const Contact = mongoose.model('Contact', contactSchema);
+
 // Login endpoint
 app.post('/api/login', async (req, res) => {
     const { email, password } = req.body;
@@ -114,6 +126,17 @@ app.get('/api/cart', async (req, res) => {
     try {
         const cart = await Cart.findOne({ email });
         res.json({ success: true, cart: cart ? cart.items : [] });
+    } catch (err) {
+        res.status(500).json({ success: false, message: 'Server error' });
+    }
+});
+
+// Contact form endpoint
+app.post('/api/contact', async (req, res) => {
+    try {
+        const contact = new Contact(req.body);
+        await contact.save();
+        res.json({ success: true });
     } catch (err) {
         res.status(500).json({ success: false, message: 'Server error' });
     }
